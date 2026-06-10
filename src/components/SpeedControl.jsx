@@ -72,7 +72,7 @@ export default function SpeedControl({ speed, paused, onSpeedChange, onTogglePau
 
       {/* Slider */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-        <span style={{ fontFamily: 'ChaletLondon, var(--font-body)', fontSize: '13px', color: 'var(--text-dim)' }}>
+        <span style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'var(--text-dim)' }}>
           0.1×
         </span>
         <input
@@ -85,7 +85,7 @@ export default function SpeedControl({ speed, paused, onSpeedChange, onTogglePau
           onChange={e => onSpeedChange(parseFloat(e.target.value))}
           style={{ width: '140px' }}
         />
-        <span style={{ fontFamily: 'ChaletLondon, var(--font-body)', fontSize: '13px', color: 'var(--text-dim)' }}>
+        <span style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'var(--text-dim)' }}>
           5×
         </span>
       </div>
@@ -97,7 +97,7 @@ export default function SpeedControl({ speed, paused, onSpeedChange, onTogglePau
           border: '1px solid rgba(255, 208, 96, 0.32)',
           borderRadius: '22px',
           padding: '4px 12px',
-          fontFamily: "'ChaletLondon', var(--font-body)",
+          fontFamily: "var(--font-body)",
           fontSize: '13px',
           fontWeight: 600,
           color: 'var(--accent-gold)',

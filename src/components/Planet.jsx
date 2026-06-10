@@ -199,18 +199,19 @@ export default function Planet({ data, onSelect, selectedPlanet, isSelected, spe
       <Html
         position={[0, data.radius + 0.8, 0]}
         center
-        distanceFactor={20}
+        distanceFactor={42}
         occlude
         style={{
-          fontSize: '11px',
-          letterSpacing: '0.18em',
+          fontSize: '15px',
+          fontWeight: '600',
+          letterSpacing: '0.14em',
           textTransform: 'uppercase',
-          fontFamily: 'monospace',
+          fontFamily: 'var(--font-display)',
           color: 'white',
           whiteSpace: 'nowrap',
           pointerEvents: 'none',
           userSelect: 'none',
-          textShadow: '0 0 6px rgba(0,0,0,0.8)',
+          textShadow: '0 1px 6px rgba(0,0,0,0.95), 0 0 4px rgba(0,0,0,0.8)',
         }}
       >
         {data.name}

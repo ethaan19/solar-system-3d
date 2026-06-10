@@ -168,7 +168,7 @@ export default function ShortcutsHUD({ orbitsVisible = true, onToggleOrbits, min
             WebkitBackdropFilter: 'blur(18px)',
             border: `1px solid ${open ? 'rgba(255,208,96,0.4)' : 'var(--border-glow)'}`,
             color: open ? 'var(--accent-gold)' : 'var(--text-secondary)',
-            fontFamily: "'ChaletLondon', var(--font-body)",
+            fontFamily: "var(--font-body)",
             fontSize: '16px',
             fontWeight: 600,
             cursor: 'pointer',

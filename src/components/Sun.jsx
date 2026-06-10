@@ -1,6 +1,6 @@
 import { useRef, Suspense } from 'react'
 import { useFrame } from '@react-three/fiber'
-import { useTexture, Billboard } from '@react-three/drei'
+import { useTexture, Billboard, Html } from '@react-three/drei'
 import * as THREE from 'three'
 
 function SunMesh() {
@@ -89,6 +89,28 @@ export default function Sun({ onSelect, isSelected }) {
           <SunMesh />
         </Suspense>
       </mesh>
+
+      {/* Floating sun name */}
+      <Html
+        position={[0, 2.5 + 0.8, 0]}
+        center
+        distanceFactor={42}
+        occlude
+        style={{
+          fontSize: '15px',
+          fontWeight: '600',
+          letterSpacing: '0.14em',
+          textTransform: 'uppercase',
+          fontFamily: 'var(--font-display)',
+          color: 'white',
+          whiteSpace: 'nowrap',
+          pointerEvents: 'none',
+          userSelect: 'none',
+          textShadow: '0 1px 6px rgba(0,0,0,0.95), 0 0 4px rgba(0,0,0,0.8)',
+        }}
+      >
+        Sol
+      </Html>
 
       {/* Selection target ring (very fine white ring) */}
       {isSelected && (
