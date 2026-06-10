@@ -1,0 +1,17 @@
+{
+  "name": "Universo 3D · Sistema Solar Interactivo",
+  "short_name": "Universo 3D",
+  "description": "Explora el sistema solar en 3D con datos científicos en tiempo real.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050508",
+  "theme_color": "#050508",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
