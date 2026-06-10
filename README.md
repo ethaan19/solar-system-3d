@@ -4,7 +4,7 @@ Una simulación interactiva del Sistema Solar renderizada en tiempo real con tec
 
 ---
 
-### **Demo:** https://solar-system-3d-omega.vercel.app/
+### **APP:** https://solar-system-3d-omega.vercel.app/
 
 ---
 
