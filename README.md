@@ -1,98 +1,98 @@
-# 🌌 Universo 3D — Sistema Solar Interactivo
+# 🌌 Universe 3D — Interactive Solar System
 
-Una simulación interactiva del Sistema Solar renderizada en tiempo real con tecnología WebGL y React Three Fiber. Explora los ocho planetas, sus lunas y el Sol con texturas fotorrealistas de la NASA, controles de cámara libres y un panel de información astronómica detallado.
-
----
-
-### **APP:** https://solar-system-3d-omega.vercel.app/
+A real-time interactive Solar System simulation rendered with WebGL and React Three Fiber. Explore all eight planets, their moons and the Sun with NASA photorealistic textures, free camera controls and a detailed astronomical information panel.
 
 ---
 
-## ✨ Características
-
-- **Renderizado 3D en tiempo real** con [Three.js](https://threejs.org/) y [React Three Fiber](https://docs.pmnd.rs/react-three-fiber)
-- **Texturas fotorrealistas** de resolución 2K/1K (NASA) para todos los planetas y el Sol
-- **Anillos de Saturno** con mapa de transparencia realista
-- **Lunas orbitando** en tiempo real para los planetas principales
-- **Cinturón de asteroides** procedural entre Marte y Júpiter
-- **Campo de estrellas** de fondo con efecto de profundidad
-- **Bloom postprocesado** para simular el resplandor luminoso del Sol y los planetas
-- **Cámara libre** con zoom, rotación y seguimiento suave de planetas seleccionados
-- **Animación de intro cinematográfica** al cargar la aplicación
-- **Panel de información** con datos astronómicos reales al seleccionar cualquier cuerpo celeste
-- **Minimap/Radar 2D** de la vista cenital del sistema
-- **Control de velocidad** de la simulación con pausa
-- **Atajos de teclado** para navegar entre planetas y controlar la simulación
-- **Fuente tipográfica personalizada** Chalet (London & Comprimé)
-- **Diseño responsivo** con estética de interfaz espacial oscura
+### **LIVE DEMO:** https://solar-system-3d-omega.vercel.app/
 
 ---
 
-## 🪐 Cuerpos Celestes Incluidos
+## ✨ Features
 
-| Planeta | Lunas modeladas |
-|---------|----------------|
-| Mercurio | — |
+- **Real-time 3D rendering** with [Three.js](https://threejs.org/) and [React Three Fiber](https://docs.pmnd.rs/react-three-fiber)
+- **Photorealistic 2K/1K textures** (NASA) for all planets and the Sun
+- **Saturn's rings** with realistic transparency map
+- **Orbiting moons** in real time for all major planets
+- **Procedural asteroid belt** between Mars and Jupiter
+- **Star field** background with depth effect
+- **Post-processing bloom** to simulate the Sun's luminous glow
+- **Free camera** with zoom, rotation and smooth planet tracking
+- **Cinematic intro animation** on load
+- **Information panel** with real astronomical data for any selected body
+- **2D Minimap/Radar** with top-down system overview
+- **Simulation speed control** with pause
+- **Keyboard shortcuts** to navigate between planets and control the simulation
+- **Custom typography** Chalet (London & Comprimé)
+- **Responsive design** with a dark space-themed UI
+
+---
+
+## 🪐 Celestial Bodies
+
+| Planet | Modelled Moons |
+|--------|----------------|
+| Mercury | — |
 | Venus | — |
-| Tierra | Luna |
-| Marte | Fobos, Deimos |
-| Júpiter | Ío, Europa, Ganímedes, Calisto |
-| Saturno | Titán, Encélado, Mimas (+ anillos) |
-| Urano | Titania, Oberón |
-| Neptuno | Tritón |
+| Earth | Moon |
+| Mars | Phobos, Deimos |
+| Jupiter | Io, Europa, Ganymede, Callisto |
+| Saturn | Titan, Enceladus, Mimas (+ rings) |
+| Uranus | Titania, Oberon |
+| Neptune | Triton |
 
-También incluye el **Sol** como cuerpo seleccionable con sus propios datos estadísticos.
-
----
-
-## 🎮 Controles
-
-### Ratón / Trackpad
-| Acción | Resultado |
-|--------|-----------|
-| **Clic** en planeta o Sol | Seleccionar y enfocar cámara |
-| **Arrastrar** | Rotar la cámara |
-| **Rueda** | Zoom in / out |
-| **Clic** en nombre del planeta (cabecera) | Seleccionar planeta |
-
-### Teclado
-| Tecla | Acción |
-|-------|--------|
-| `←` / `→` | Cambiar al cuerpo anterior / siguiente |
-| `Espacio` | Pausar / reanudar la simulación |
-| `Esc` | Deseleccionar el cuerpo actual |
-| `+` / `-` | Aumentar / reducir la velocidad ±0.5× |
-| `M` | Mostrar / ocultar el radar |
-| `O` | Mostrar / ocultar las órbitas |
-
-### Botones de la interfaz
-- **`⊙`** — Toggle de órbitas planetarias
-- **`◎`** — Toggle del radar / minimap
-- **`?`** — Panel de atajos de teclado
-- **`▶ / ❚❚`** — Pausa / reanudar simulación
-- **Slider de velocidad** — Ajusta la velocidad de 0.1× a 5×
+The **Sun** is also selectable and includes its own statistical data panel.
 
 ---
 
-## 🚀 Instalación y uso
+## 🎮 Controls
 
-### Requisitos
-- [Node.js](https://nodejs.org/) v18 o superior
-- npm v9 o superior
+### Mouse / Trackpad
+| Action | Result |
+|--------|--------|
+| **Click** on planet or Sun | Select and focus camera |
+| **Drag** | Rotate camera |
+| **Scroll wheel** | Zoom in / out |
+| **Click** planet name (header) | Select planet |
 
-### Pasos
+### Keyboard
+| Key | Action |
+|-----|--------|
+| `←` / `→` | Previous / next celestial body |
+| `Space` | Pause / resume simulation |
+| `Esc` | Deselect current body |
+| `+` / `-` | Increase / decrease speed ±0.5× |
+| `M` | Show / hide radar |
+| `O` | Show / hide orbits |
+
+### UI Buttons
+- **`⊙`** — Toggle planetary orbits
+- **`◎`** — Toggle radar / minimap
+- **`?`** — Keyboard shortcuts panel
+- **`▶ / ❚❚`** — Pause / resume simulation
+- **Speed slider** — Adjust simulation speed from 0.1× to 5×
+
+---
+
+## 🚀 Installation & Usage
+
+### Requirements
+- [Node.js](https://nodejs.org/) v18 or higher
+- npm v9 or higher
+
+### Steps
 
 ```bash
-# 1. Instalar dependencias
+# 1. Install dependencies
 npm install
 
-# 2. Iniciar el servidor de desarrollo
+# 2. Start the development server
 npm run dev
 ```
 
-La aplicación estará disponible en `http://localhost:5173` (o el puerto que indique Vite).
+The app will be available at `http://localhost:5173`.
 
-### Build de producción
+### Production Build
 
 ```bash
 npm run build
@@ -101,12 +101,12 @@ npm run preview
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```
 solar-system/
 ├── public/
-│   └── textures/              # Texturas astronómicas (NASA)
+│   └── textures/                   # Astronomical textures (NASA)
 │       ├── sun.jpg
 │       ├── earth.jpg
 │       ├── mars.jpg
@@ -115,28 +115,28 @@ solar-system/
 │       └── ...
 ├── src/
 │   ├── components/
-│   │   ├── AsteroidBelt.jsx   # Cinturón de asteroides 3D
-│   │   ├── Header.jsx         # Cabecera con nombres de planetas clicables
-│   │   ├── InfoPanel.jsx      # Panel lateral de datos del cuerpo seleccionado
-│   │   ├── LoadingScreen.jsx  # Pantalla de carga con animación
-│   │   ├── Minimap.jsx        # Radar / vista cenital 2D
-│   │   ├── OrbitRing.jsx      # Anillos de órbita sutiles
-│   │   ├── Planet.jsx         # Planetas, lunas, atmósferas y selección
-│   │   ├── ShortcutsHUD.jsx   # Panel de atajos + botones de toggle
-│   │   ├── SpeedControl.jsx   # Control de pausa y velocidad
-│   │   └── Sun.jsx            # El Sol con emisión de luz y selección
+│   │   ├── AsteroidBelt.jsx        # 3D asteroid belt
+│   │   ├── Header.jsx              # Header with clickable planet names
+│   │   ├── InfoPanel.jsx           # Side panel with selected body data
+│   │   ├── LoadingScreen.jsx       # Loading screen with animation
+│   │   ├── Minimap.jsx             # Radar / 2D top-down view
+│   │   ├── OrbitRing.jsx           # Subtle orbit rings
+│   │   ├── Planet.jsx              # Planets, moons, atmospheres & selection
+│   │   ├── ShortcutsHUD.jsx        # Shortcuts panel + toggle buttons
+│   │   ├── SpeedControl.jsx        # Pause and speed control
+│   │   └── Sun.jsx                 # Sun with light emission & selection
 │   ├── data/
-│   │   └── planets.js         # Datos científicos de todos los cuerpos celestes
+│   │   └── planets.js              # Scientific data for all celestial bodies
 │   ├── hooks/
-│   │   └── useTexturePreloader.js  # Precarga de texturas con progreso
+│   │   └── useTexturePreloader.js  # Texture preloader with progress
 │   ├── utils/
-│   │   └── textureGenerator.js    # Texturas procedurales de respaldo
+│   │   └── textureGenerator.js     # Procedural fallback textures
 │   ├── fonts/
 │   │   ├── ChaletLondonNineteenSixty.ttf
 │   │   └── ChaletComprime-CologneSixty.ttf
-│   ├── App.jsx                # Raíz: Canvas 3D, cámara, estado global
-│   ├── index.css              # Sistema de diseño y fuentes personalizadas
-│   └── main.jsx               # Punto de entrada React
+│   ├── App.jsx                     # Root: 3D Canvas, camera, global state
+│   ├── index.css                   # Design system and custom fonts
+│   └── main.jsx                    # React entry point
 ├── index.html
 ├── vite.config.js
 └── package.json
@@ -144,27 +144,36 @@ solar-system/
 
 ---
 
-## 🛠️ Tecnologías
+## 🛠️ Tech Stack
 
-| Tecnología | Versión | Uso |
+| Technology | Version | Usage |
 |---|---|---|
-| [React](https://react.dev/) | 18 | Framework UI |
-| [Three.js](https://threejs.org/) | 0.167 | Motor 3D WebGL |
-| [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) | 8 | Integración Three.js + React |
-| [@react-three/drei](https://github.com/pmndrs/drei) | 9 | Helpers 3D (Stars, OrbitControls…) |
-| [@react-three/postprocessing](https://github.com/pmndrs/react-postprocessing) | 2 | Efectos de postprocesado (Bloom) |
-| [Vite](https://vitejs.dev/) | 5 | Bundler y servidor de desarrollo |
+| [React](https://react.dev/) | 18 | UI Framework |
+| [Three.js](https://threejs.org/) | 0.167 | WebGL 3D Engine |
+| [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) | 8 | Three.js + React integration |
+| [@react-three/drei](https://github.com/pmndrs/drei) | 9 | 3D Helpers (Stars, OrbitControls…) |
+| [@react-three/postprocessing](https://github.com/pmndrs/react-postprocessing) | 2 | Post-processing effects (Bloom) |
+| [Vite](https://vitejs.dev/) | 5 | Bundler and dev server |
 
 ---
 
-## 🌍 Datos Astronómicos
+## 🌍 Astronomical Data
 
-Todos los datos mostrados en el panel de información (diámetro, distancia al Sol, duración del día, temperatura media, número de lunas…) están basados en valores reales publicados por la **NASA** y la **IAU** (Unión Astronómica Internacional).
+All data shown in the information panel (diameter, distance from the Sun, day length, average temperature, number of moons…) is based on real values published by **NASA** and the **IAU** (International Astronomical Union).
 
-Las texturas provienen del [Solar System Scope Texture Pack](https://www.solarsystemscope.com/textures/) con resolución 2K.
+Textures are from the [Solar System Scope Texture Pack](https://www.solarsystemscope.com/textures/) at 2K resolution.
 
 ---
 
-## 📄 Licencia
+## 👤 Author
 
-Proyecto educativo de uso libre. Las texturas astronómicas son propiedad de sus respectivos autores (NASA / Solar System Scope).
+**Ethan Macias** — Master's in AI + Big Data at Tajamar (Microsoft Partner)
+
+- 🌐 LinkedIn: [https://www.linkedin.com/in/ethan-macias-termenon-b99a79338/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BHyTNUHDhTkWj4qNTEeU%2BOg%3D%3D](https://linkedin.com)
+- 💻 GitHub: [@ethaan19](https://github.com)
+
+---
+
+## 📄 License
+
+Educational project, free to use. Astronomical textures are the property of their respective authors (NASA / Solar System Scope).
