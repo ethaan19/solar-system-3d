@@ -4,7 +4,7 @@ A real-time interactive Solar System simulation rendered with WebGL and React Th
 
 ---
 
-### **LIVE DEMO:** https://solar-system-3d-omega.vercel.app/
+### **APP:** https://solar-system-3d-omega.vercel.app/
 
 ---
 
