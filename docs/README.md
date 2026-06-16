@@ -1,3 +1,5 @@
+🌐 **[English Version](../README.md)**
+
 # 🌌 Universe 3D — Sistema Solar Interactivo
 
 Una simulación interactiva en tiempo real del Sistema Solar renderizada con WebGL y React Three Fiber. Explora los ocho planetas, sus lunas y el Sol con texturas fotorrealistas de la NASA, controles de cámara libre y un panel de información astronómica detallado.
