@@ -5,14 +5,14 @@ import * as THREE from 'three'
 import { createEarthCloudsTexture } from '../utils/textureGenerator.js'
 
 const TEXTURE_FILES = {
-  'Mercurio': 'mercury.jpg',
+  'Mercury': 'mercury.jpg',
   'Venus':    'venus.jpg',
-  'Tierra':   'earth.jpg',
-  'Marte':    'mars.jpg',
-  'Júpiter':  'jupiter.jpg',
-  'Saturno':  'saturn.jpg',
-  'Urano':    'uranus.jpg',
-  'Neptuno':  'neptune.jpg'
+  'Earth':   'earth.jpg',
+  'Mars':    'mars.jpg',
+  'Jupiter':  'jupiter.jpg',
+  'Saturn':  'saturn.jpg',
+  'Uranus':    'uranus.jpg',
+  'Neptune':  'neptune.jpg'
 }
 
 function PlanetMesh({ data }) {
@@ -23,11 +23,12 @@ function PlanetMesh({ data }) {
   return (
     <meshStandardMaterial
       map={texture}
-      roughness={data.name === 'Tierra' ? 0.35 : 0.8}
-      metalness={data.name === 'Tierra' ? 0.1 : 0.05}
+      roughness={data.name === 'Earth' ? 0.35 : 0.8}
+      metalness={data.name === 'Earth' ? 0.1 : 0.05}
     />
   )
 }
+
 
 function SaturnRings({ data }) {
   const ringTexture = useTexture('/textures/saturn_ring.png')
@@ -138,7 +139,7 @@ export default function Planet({ data, onSelect, selectedPlanet, isSelected, spe
 
   // Earth cloud layer texture (still procedural for dynamic look)
   const cloudTexture = useMemo(() => {
-    if (data.name !== 'Tierra') return null
+    if (data.name !== 'Earth') return null
     const canvas = createEarthCloudsTexture()
     const tex = new THREE.CanvasTexture(canvas)
     tex.wrapS = THREE.RepeatWrapping
@@ -218,7 +219,7 @@ export default function Planet({ data, onSelect, selectedPlanet, isSelected, spe
       </Html>
 
       {/* Earth cloud layer */}
-      {data.name === 'Tierra' && cloudTexture && (
+      {data.name === 'Earth' && cloudTexture && (
         <mesh ref={cloudsRef} scale={1.02} raycast={() => null}>
           <sphereGeometry args={[data.radius, segments, segments]} />
           <meshStandardMaterial
@@ -244,15 +245,15 @@ export default function Planet({ data, onSelect, selectedPlanet, isSelected, spe
       )}
 
       {/* Atmospheric glow for planets with atmospheres */}
-      {['Tierra', 'Venus', 'Marte', 'Urano', 'Neptuno'].includes(data.name) && (
+      {['Earth', 'Venus', 'Mars', 'Uranus', 'Neptune'].includes(data.name) && (
         <mesh scale={1.035} raycast={() => null}>
           <sphereGeometry args={[data.radius, segments, segments]} />
           <meshBasicMaterial
             color={
-              data.name === 'Tierra' ? '#7ebcff' :
+              data.name === 'Earth' ? '#7ebcff' :
               data.name === 'Venus' ? '#ffd778' :
-              data.name === 'Marte' ? '#ff6a3c' :
-              data.name === 'Urano' ? '#a3ffff' :
+              data.name === 'Mars' ? '#ff6a3c' :
+              data.name === 'Uranus' ? '#a3ffff' :
               '#5a76ff'
             }
             transparent

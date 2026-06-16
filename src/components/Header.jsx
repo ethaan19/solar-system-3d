@@ -23,7 +23,7 @@ export default function Header({ planetNames, activeName, onSelectPlanet }) {
           textShadow: '0 0 20px rgba(74, 143, 255, 0.4)',
         }}
       >
-        Universo 3D
+        Universe 3D
       </div>
 
       <div

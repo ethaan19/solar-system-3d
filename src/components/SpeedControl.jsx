@@ -1,7 +1,7 @@
 export default function SpeedControl({ speed, paused, onSpeedChange, onTogglePause }) {
   const label = paused
-    ? 'SIMULACIÓN EN PAUSA'
-    : `VELOCIDAD x${speed.toFixed(1)}`
+    ? 'SIMULATION PAUSED'
+    : `SPEED x${speed.toFixed(1)}`
 
   return (
     <div
@@ -28,7 +28,7 @@ export default function SpeedControl({ speed, paused, onSpeedChange, onTogglePau
       {/* Play/Pause button — animated icon swap */}
       <button
         onClick={onTogglePause}
-        title={paused ? 'Reanudar (Espacio)' : 'Pausar (Espacio)'}
+        title={paused ? 'Resume (Space)' : 'Pause (Space)'}
         style={{
           background: paused
             ? 'rgba(255, 208, 96, 0.16)'

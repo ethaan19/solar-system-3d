@@ -47,7 +47,7 @@ export default function Minimap({ positionsRef, cameraRef, selectedName, onSelec
       ctx.shadowBlur = 8
       ctx.fill()
       ctx.shadowBlur = 0
-      hits.push({ name: 'Sol', sx: CENTER, sy: CENTER, r: 7 })
+      hits.push({ name: 'Sun', sx: CENTER, sy: CENTER, r: 7 })
 
       // Planets
       PLANETS.forEach((p) => {
@@ -127,7 +127,7 @@ export default function Minimap({ positionsRef, cameraRef, selectedName, onSelec
       if (d <= h.r && d < bestD) { best = h; bestD = d }
     }
     if (!best) return
-    if (best.name === 'Sol') onSelectSun()
+    if (best.name === 'Sun') onSelectSun()
     else onSelectPlanet(PLANETS.find((p) => p.name === best.name))
   }
 

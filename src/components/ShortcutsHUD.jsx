@@ -1,12 +1,12 @@
 import { useState } from 'react'
 
 const SHORTCUTS = [
-  { keys: ['←', '→'], desc: 'Cuerpo anterior / siguiente' },
-  { keys: ['Espacio'], desc: 'Pausar / reanudar' },
-  { keys: ['Esc'], desc: 'Deseleccionar' },
-  { keys: ['+', '−'], desc: 'Velocidad: 0.5×' },
-  { keys: ['M'], desc: 'Mostrar / ocultar radar' },
-  { keys: ['O'], desc: 'Mostrar / ocultar órbitas' },
+  { keys: ['←', '→'], desc: 'Previous / next body' },
+  { keys: ['Space'], desc: 'Pause / resume' },
+  { keys: ['Esc'], desc: 'Deselect' },
+  { keys: ['+', '−'], desc: 'Speed: ±0.5×' },
+  { keys: ['M'], desc: 'Show / hide radar' },
+  { keys: ['O'], desc: 'Show / hide orbits' },
 ]
 
 function Key({ children }) {
@@ -63,7 +63,7 @@ export default function ShortcutsHUD({ orbitsVisible = true, onToggleOrbits, min
               marginBottom: '14px',
             }}
           >
-            Atajos de teclado
+            Keyboard shortcuts
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '11px' }}>
             {SHORTCUTS.map((s, i) => (
@@ -93,8 +93,8 @@ export default function ShortcutsHUD({ orbitsVisible = true, onToggleOrbits, min
         {/* Orbit toggle button */}
         <button
           onClick={onToggleOrbits}
-          title="Mostrar / ocultar órbitas (O)"
-          aria-label="Mostrar / ocultar órbitas"
+          title="Show / hide orbits (O)"
+          aria-label="Show / hide orbits"
           style={{
             width: '40px',
             height: '40px',
@@ -125,8 +125,8 @@ export default function ShortcutsHUD({ orbitsVisible = true, onToggleOrbits, min
         {/* Radar toggle button */}
         <button
           onClick={onToggleMinimap}
-          title="Mostrar / ocultar radar (M)"
-          aria-label="Mostrar / ocultar radar"
+          title="Show / hide radar (M)"
+          aria-label="Show / hide radar"
           style={{
             width: '40px',
             height: '40px',
@@ -157,8 +157,8 @@ export default function ShortcutsHUD({ orbitsVisible = true, onToggleOrbits, min
         {/* Shortcuts ? button */}
         <button
           onClick={() => setOpen(o => !o)}
-          aria-label="Atajos de teclado"
-          title="Atajos de teclado"
+          aria-label="Keyboard shortcuts"
+          title="Keyboard shortcuts"
           style={{
             width: '40px',
             height: '40px',

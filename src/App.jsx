@@ -19,16 +19,16 @@ import { useTexturePreloader } from './hooks/useTexturePreloader.js'
 import { PLANETS } from './data/planets.js'
 
 const SUN_DATA = {
-  name: 'Sol',
+  name: 'Sun',
   radius: 2.5,
   color: '#FF8C00',
-  tipo: 'Estrella · Enana Amarilla',
+  tipo: 'Star · Yellow Dwarf',
   info: {
     diametro: '1,392,700 km',
-    distancia: '0 km (Centro)',
-    dia: '609 horas',
+    distancia: '0 km (Center)',
+    dia: '609 hours',
     año: 'N/A',
-    temperatura: '5,500 °C (superficie)',
+    temperatura: '5,500 °C (surface)',
     lunas: 'N/A',
   }
 }
@@ -269,7 +269,7 @@ export default function App() {
 
         <Sun
           onSelect={() => handleSelectPlanet(SUN_DATA)}
-          isSelected={selectedPlanet?.name === 'Sol'}
+          isSelected={selectedPlanet?.name === 'Sun'}
         />
         <AsteroidBelt />
 

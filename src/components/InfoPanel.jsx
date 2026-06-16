@@ -8,26 +8,26 @@ export default function InfoPanel({ planet, onClose }) {
   if (visibleMoons > 0) {
     moonValue =
       typeof totalMoons === 'number' && totalMoons > visibleMoons
-        ? `${visibleMoons} visibles · ${totalMoons}`
+        ? `${visibleMoons} visible · ${totalMoons}`
         : `${totalMoons}`
   }
 
   const rows = planet.isMoon
     ? [
-        { label: 'Diámetro', value: planet.info?.diametro ?? '—' },
-        { label: 'Planeta Progenitor', value: planet.parentPlanet ?? '—' },
-        { label: 'Distancia al Planeta', value: planet.info?.distancia ?? '—' },
-        { label: 'Período Rotación', value: planet.info?.dia ?? '—' },
-        { label: 'Período Orbital', value: planet.info?.año ?? '—' },
-        { label: 'Temperatura media', value: planet.info?.temperatura ?? '—' },
+        { label: 'Diameter', value: planet.info?.diametro ?? '—' },
+        { label: 'Parent Planet', value: planet.parentPlanet ?? '—' },
+        { label: 'Distance to Planet', value: planet.info?.distancia ?? '—' },
+        { label: 'Rotation Period', value: planet.info?.dia ?? '—' },
+        { label: 'Orbital Period', value: planet.info?.año ?? '—' },
+        { label: 'Average Temperature', value: planet.info?.temperatura ?? '—' },
       ]
     : [
-        { label: 'Diámetro', value: planet.info?.diametro ?? '—' },
-        { label: 'Distancia al Sol', value: planet.info?.distancia ?? '—' },
-        { label: 'Duración del día', value: planet.info?.dia ?? '—' },
-        { label: 'Duración del año', value: planet.info?.año ?? '—' },
-        { label: 'Temperatura media', value: planet.info?.temperatura ?? '—' },
-        { label: 'Número de lunas', value: moonValue },
+        { label: 'Diameter', value: planet.info?.diametro ?? '—' },
+        { label: 'Distance to Sun', value: planet.info?.distancia ?? '—' },
+        { label: 'Day Length', value: planet.info?.dia ?? '—' },
+        { label: 'Year Length', value: planet.info?.año ?? '—' },
+        { label: 'Average Temperature', value: planet.info?.temperatura ?? '—' },
+        { label: 'Number of Moons', value: moonValue },
       ]
 
   return (
@@ -53,7 +53,7 @@ export default function InfoPanel({ planet, onClose }) {
       {/* Close button */}
       <button
         onClick={onClose}
-        aria-label="Cerrar"
+        aria-label="Close"
         style={{
           position: 'absolute',
           top: '18px',

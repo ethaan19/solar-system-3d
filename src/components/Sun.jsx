@@ -69,7 +69,7 @@ export default function Sun({ onSelect, isSelected }) {
       {/* Sun mesh */}
       <mesh
         ref={meshRef}
-        name="planet-Sol"
+        name="planet-Sun"
         onClick={(e) => {
           e.stopPropagation()
           if (onSelect) onSelect()
@@ -109,7 +109,7 @@ export default function Sun({ onSelect, isSelected }) {
           textShadow: '0 1px 6px rgba(0,0,0,0.95), 0 0 4px rgba(0,0,0,0.8)',
         }}
       >
-        Sol
+        Sun
       </Html>
 
       {/* Selection target ring (very fine white ring) */}

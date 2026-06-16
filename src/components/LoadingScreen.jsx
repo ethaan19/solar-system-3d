@@ -95,7 +95,7 @@ export default function LoadingScreen({ progress, exiting }) {
             paddingLeft: '0.32em', // optical compensation for letter-spacing
           }}
         >
-          UNIVERSO 3D
+          UNIVERSE 3D
         </h1>
         <p
           style={{
@@ -109,7 +109,7 @@ export default function LoadingScreen({ progress, exiting }) {
             paddingLeft: '0.42em',
           }}
         >
-          Sistema Solar Interactivo
+          Interactive Solar System
         </p>
       </div>
 
