@@ -2,7 +2,7 @@
 
 A real-time interactive Solar System simulation rendered with WebGL and React Three Fiber. Explore all eight planets, their moons and the Sun with NASA photorealistic textures, free camera controls and a detailed astronomical information panel.
 
-*Read this in other languages: [Español 🇪🇸](docs/README.md)*
+[Leer en Español 🇪🇸](docs/README.md)
 
 ---
 
