@@ -1,4 +1,4 @@
-🌐 **[English Version](../README.md)**
+**[🇬🇧 Read in English](../README.md)**
 
 # 🌌 Universe 3D — Sistema Solar Interactivo
 
